@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="form">
+
+
+<div class="form-intro">
+
+
+  <h1 class=" my-1 heading-text">Learn to code by watching others</h1>
+
+  <p class="mb-1">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+  but understanding how developers think is invaluable. </p>
+</div>
+  <div class="form-main-content">
+  <div class="banner-price">
+    <div class="banner-price-inner"> 
+      <strong>Try it free 7 days</strong> then $20/mo. thereafter
+    </div>
+   
+  </div>
+
+  <div class="my-1 form-outer">
+    <form>
+      <div class="input-field " data-empty="First Name cannot be empty" data-error="Name should not include special character or number">
+        <input type="text" name="firstName" placeholder="First Name" id="first-name" pattern="[A-Za-z]{1,}"/>
+      </div>
+      <div class="input-field" data-empty="Last Name cannot be empty" data-error="Name should not include special character or number">
+        <input type="text" name="lastName" placeholder="Last Name" id="last-name" pattern="[A-Za-z]{1,}"/>
+      </div>
+      <div class="input-field" data-empty="Email cannot be empty" data-error="Looks like it is not an email">
+        <input type="email" name="email" placeholder="Email Address" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+      </div>
+      <div class="input-field" data-empty="Password cannot be empty" data-error="Please include at least one uppercaseand one special character">
+        <input type="password" name="password" placeholder="Password (minimum 8 characters)" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}"/>
+      </div>
+        <input class="btn-submit" type="submit" value="Claim your free trial " >
+        <p class="secondary tc">
+          By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+    </form>
+  </div>
+</div>
+</section>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Irene K</a>.
+    </p>
+  </footer>
+
+
+  <script src="index.js"></script>
+</body>
+</html>
